@@ -1,0 +1,12 @@
+#navMenu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+#navMenu button {
+  height: 50px;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 10%;
+}
