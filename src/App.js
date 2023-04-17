@@ -1,7 +1,10 @@
+// External components
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+// Internal components
 import Home from './pages/Home';
-import NotFound from './pages/NotFound';
 import Layout from './pages/Layout';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
