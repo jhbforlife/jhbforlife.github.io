@@ -1,17 +1,29 @@
-import { Link, Outlet, useLocation } from 'react-router-dom';
-import styles from './Layout.module.css';
-import Spacer from '../components/Spacer';
+// External non-components
 import { useState } from 'react';
+
+// External components
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { Link, Outlet, useLocation } from 'react-router-dom';
+
+// Internal non-components
+import styles from './Layout.module.css';
+
+// Internal components
 import NavMenu from '../components/NavMenu';
+import Spacer from '../components/Spacer';
 
 const Layout = () => {
+  // Get current route
   const location = useLocation();
+  // State to manage window resizing
   const [isMobile, setIsMobile] = useState(false);
 
+  // Checks if the current route is the current page
   const isCurrentPage = (page) => {
     return page === location.pathname ? styles.currentPage : '';
   };
 
+  // Checks if the mobile UI should be used or not
   const checkIsMobile = () => {
     if (window.innerWidth <= 768 && !isMobile) {
       setIsMobile(true);
@@ -44,6 +56,17 @@ const Layout = () => {
             <h1>writing</h1>
           </Link>
         </nav> */}
+        <div id={styles.socials}>
+          <a href="https://github.com/jhbforlife" target="__blank">
+            <AiFillGithub size={50} />
+          </a>
+          <a href="https://instagram.com/jhbforlife" target="__blank">
+            <AiFillInstagram size={50} />
+          </a>
+          <a href="https://linkedin.com/in/jacobhbrown99" target="__blank">
+            <AiFillLinkedin size={50} />
+          </a>
+        </div>
       </div>
       <div id={styles.content}>
         <Outlet />

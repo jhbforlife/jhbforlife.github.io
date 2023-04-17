@@ -25,6 +25,7 @@
   aspect-ratio: 1;
   border-radius: 50%;
   align-self: center;
+  -webkit-touch-callout: none;
 }
 
 #navHeading {
@@ -73,12 +74,12 @@
     width: 100vw;
     height: fit-content;
     margin-top: 50px;
+    padding: 0;
   }
 
   #content {
     width: 100vw;
     height: fit-content;
     margin-top: 25px;
-    padding-bottom: 50px;
   }
 }

@@ -1,6 +1,7 @@
+// Internal non-components
 import styles from './Card.module.css';
 
-const Card = ({ heading, body, style }) => {
+const Card = ({ style, heading, body }) => {
   return (
     <div className={styles.card} style={style}>
       <h2>{heading}</h2>
