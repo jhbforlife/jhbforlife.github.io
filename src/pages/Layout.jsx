@@ -37,12 +37,12 @@ const Layout = () => {
   return (
     <div id={styles.page}>
       <div id={styles.nav}>
-        {/* {isMobile ? <NavMenu /> : ''} */}
+        {isMobile ? <NavMenu /> : ''}
         <img id={styles.navProfile} src="profile.jpeg" alt="profile" />
         <h1 id={styles.navHeading}>jacob h. brown</h1>
         <h5>welcome to me</h5>
         <Spacer style={{ width: '20vw', height: '10px' }} />
-        {/* <nav hidden={isMobile}>
+        <nav hidden={isMobile}>
           <Link to="/" className={isCurrentPage('/')}>
             <h1>home</h1>
           </Link>
@@ -55,15 +55,15 @@ const Layout = () => {
           <Link to="/writing" className={isCurrentPage('/writing')}>
             <h1>writing</h1>
           </Link>
-        </nav> */}
+        </nav>
         <div id={styles.socials}>
-          <a href="https://github.com/jhbforlife" target="__blank">
+          <a href="https://github.com/jhbforlife" target="_blank">
             <AiFillGithub size={50} />
           </a>
-          <a href="https://instagram.com/jhbforlife" target="__blank">
+          <a href="https://instagram.com/jhbforlife" target="_blank">
             <AiFillInstagram size={50} />
           </a>
-          <a href="https://linkedin.com/in/jacobhbrown99" target="__blank">
+          <a href="https://linkedin.com/in/jacobhbrown99" target="_blank">
             <AiFillLinkedin size={50} />
           </a>
         </div>

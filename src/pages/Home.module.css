@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 90%;
+  margin: auto;
 }
 
 #home a,
@@ -12,5 +13,5 @@
 #home a:visited {
   color: black;
   text-decoration-color: black;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }

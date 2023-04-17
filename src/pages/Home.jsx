@@ -12,22 +12,30 @@ const Home = () => {
         to view some of my favorite code, photos, and writing.
         <br />
         <br />
-        as far as I go, here are some fun facts:
+        as far as i go, here are some fun facts:
       </p>
       <ul>
-        <li>I live in Birmingham, AL</li>
-        <li>I am an IB diploma recipient</li>
-        <li>I will *at some point* have a BS in Psychology</li>
-        <li>I currently work at Shipt as a software engineer intern</li>
+        <li>i am located in birmingham, al</li>
         <li>
-          I have an amazing fiance named Austin, and a demon-spawned cat named
-          Sam E
+          i graduated from jcib in 2017 and earned my{' '}
+          <a
+            href="https://www.ibo.org/programmes/diploma-programme/what-is-the-dp/"
+            target="_blank"
+          >
+            ib diploma
+          </a>
+        </li>
+        <li>i will *eventually* have a bs in psychology</li>
+        <li>i am interning as a software engineer at shipt</li>
+        <li>
+          i have an amazing fiance named austin and a demon-spawned cat named
+          sam e
         </li>
         <li>
-          I have a congenital eye disorder called{' '}
+          i have a congenital eye disorder called{' '}
           <a
             href="https://nystagmus.org/about/what-is-nystagmus/"
-            target="__blank"
+            target="_blank"
           >
             nystagmus
           </a>
@@ -39,9 +47,9 @@ const Home = () => {
   return (
     <div id={styles.home}>
       <Card heading="about me" body={body} />
-      {/* <Card heading="code" />
+      <Card heading="code" />
       <Card heading="photos" />
-      <Card heading="writing" /> */}
+      <Card heading="writing" />
     </div>
   );
 };
