@@ -1,3 +1,7 @@
+h1 {
+  margin: 25px 0;
+}
+
 #page {
   width: 100vw;
   height: 100vh;
@@ -58,9 +62,11 @@
 #content {
   width: 80vw;
   height: 100vh;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 }
 
 @media (max-width: 768px) {

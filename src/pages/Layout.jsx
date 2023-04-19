@@ -42,11 +42,11 @@ const Layout = () => {
         <h1 id={styles.navHeading}>jacob h. brown</h1>
         <h5>welcome to me</h5>
         <Spacer style={{ width: '20vw', height: '10px' }} />
-        {/* <nav hidden={isMobile}>
+        <nav hidden={isMobile}>
           <Link to="/" className={isCurrentPage('/')}>
             <h1>home</h1>
           </Link>
-          <Link to="/code" className={isCurrentPage('/code')}>
+          {/* <Link to="/code" className={isCurrentPage('/code')}>
             <h1>code</h1>
           </Link>
           <Link to="/photos" className={isCurrentPage('/photos')}>
@@ -54,16 +54,16 @@ const Layout = () => {
           </Link>
           <Link to="/writing" className={isCurrentPage('/writing')}>
             <h1>writing</h1>
-          </Link>
-        </nav> */}
+          </Link> */}
+        </nav>
         <div id={styles.socials}>
-          <a href="https://github.com/jhbforlife" target="__blank">
+          <a href="https://github.com/jhbforlife" target="_blank">
             <AiFillGithub size={50} />
           </a>
-          <a href="https://instagram.com/jhbforlife" target="__blank">
+          <a href="https://instagram.com/jhbforlife" target="_blank">
             <AiFillInstagram size={50} />
           </a>
-          <a href="https://linkedin.com/in/jacobhbrown99" target="__blank">
+          <a href="https://linkedin.com/in/jacobhbrown99" target="_blank">
             <AiFillLinkedin size={50} />
           </a>
         </div>
