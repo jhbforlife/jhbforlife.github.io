@@ -37,7 +37,7 @@ const Layout = () => {
   return (
     <div id={styles.page}>
       <div id={styles.nav}>
-        {isMobile ? <NavMenu /> : ''}
+        {/* {isMobile ? <NavMenu /> : ''} */}
         <img id={styles.navProfile} src="profile.jpeg" alt="profile" />
         <h1 id={styles.navHeading}>jacob h. brown</h1>
         <h5>welcome to me</h5>
@@ -46,7 +46,7 @@ const Layout = () => {
           <Link to="/" className={isCurrentPage('/')}>
             <h1>home</h1>
           </Link>
-          <Link to="/code" className={isCurrentPage('/code')}>
+          {/* <Link to="/code" className={isCurrentPage('/code')}>
             <h1>code</h1>
           </Link>
           <Link to="/photos" className={isCurrentPage('/photos')}>
@@ -54,7 +54,7 @@ const Layout = () => {
           </Link>
           <Link to="/writing" className={isCurrentPage('/writing')}>
             <h1>writing</h1>
-          </Link>
+          </Link> */}
         </nav>
         <div id={styles.socials}>
           <a href="https://github.com/jhbforlife" target="_blank">

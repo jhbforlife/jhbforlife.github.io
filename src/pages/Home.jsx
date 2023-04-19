@@ -47,9 +47,9 @@ const Home = () => {
   return (
     <div id={styles.home}>
       <Card heading="about me" body={body} />
-      <Card heading="code" />
+      {/* <Card heading="code" />
       <Card heading="photos" />
-      <Card heading="writing" />
+      <Card heading="writing" /> */}
     </div>
   );
 };
