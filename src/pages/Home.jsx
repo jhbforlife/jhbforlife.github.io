@@ -44,12 +44,27 @@ const Home = () => {
     </>
   );
 
+  const githubBody = (
+    <h6>
+      <a
+        href="https://github.com/jhbforlife/jhbforlife.github.io"
+        target="_blank"
+      >
+        view project on github
+      </a>
+    </h6>
+  );
+
   return (
     <div id={styles.home}>
       <Card heading="about me" body={body} />
       {/* <Card heading="code" />
       <Card heading="photos" />
       <Card heading="writing" /> */}
+      <Card
+        body={githubBody}
+        style={{ fontStyle: 'italic', textAlign: 'center' }}
+      />
     </div>
   );
 };
