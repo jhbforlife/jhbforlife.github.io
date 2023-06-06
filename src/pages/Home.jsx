@@ -26,7 +26,7 @@ const Home = () => {
           </a>
         </li>
         <li>i will *eventually* have a bs in psychology</li>
-        <li>i am interning as a software engineer at shipt</li>
+        <li>i am an associate engineer at shipt</li>
         <li>
           i have an amazing fiance named austin and a demon-spawned cat named
           sam e
