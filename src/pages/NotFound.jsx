@@ -24,6 +24,7 @@ const NotFound = () => {
           >
             <iframe
               src='https://giphy.com/embed/VwoJkTfZAUBSU'
+              title='gif'
               width='100%'
               height='100%'
               style={{ position: 'absolute' }}

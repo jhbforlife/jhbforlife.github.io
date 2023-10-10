@@ -15,8 +15,10 @@ import Spacer from '../components/Spacer';
 const Layout = () => {
   // Get current route
   const location = useLocation();
-  // State to manage window resizing
+  // State to manage mobile UI
   const [isMobile, setIsMobile] = useState(false);
+  // State to manage window resizing
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   // State management to show navigation menu on tap
   const [menuState, setMenuState] = useState(false);
 
@@ -25,26 +27,23 @@ const Layout = () => {
     return page === location.pathname ? styles.currentPage : '';
   };
 
-  // Checks if the mobile UI should be used or not
-  const checkIsMobile = () => {
-    if (window.innerWidth <= 768 && !isMobile) {
-      setIsMobile(true);
-    } else if (window.innerWidth > 768 && isMobile) {
-      setIsMobile(false);
-    }
-  };
-
   const onMenuClick = () => {
     if (isMobile) {
       setMenuState((prev) => !prev);
     }
   };
 
-  window.addEventListener('resize', checkIsMobile);
+  window.addEventListener(
+    'resize',
+    setWindowWidth.bind(this, window.innerWidth)
+  );
 
   useLayoutEffect(() => {
-    checkIsMobile();
-  }, [])
+    // Checks if the mobile UI should be used or not
+    windowWidth <= 768 ?
+      setIsMobile(true) :
+      setIsMobile(false)
+  }, [isMobile, windowWidth]);
 
   return (
     <div id={styles.page}>
@@ -53,7 +52,11 @@ const Layout = () => {
         <h1 id={styles.navHeading}>jacob h. brown</h1>
         <h5>welcome to me</h5>
         <Spacer style={{ width: '20vw', height: '10px' }} />
-        <nav className={`${isMobile ? styles.navLinksMobile : ''} ${menuState ? styles.navLinksMobile_active : ''}`}>
+        {/* <nav
+          className={`${isMobile ? styles.navLinksMobile : ''} ${
+            menuState ? styles.navLinksMobile_active : ''
+          }`}
+        >
           <button onClick={onMenuClick} hidden={!isMobile}>
             <HiMenu size={25} />
           </button>
@@ -61,25 +64,49 @@ const Layout = () => {
             <Link to='/' className={isCurrentPage('/')} onClick={onMenuClick}>
               <h1>home</h1>
             </Link>
-            <Link to='/code' className={isCurrentPage('/code')} onClick={onMenuClick}>
+            <Link
+              to='/code'
+              className={isCurrentPage('/code')}
+              onClick={onMenuClick}
+            >
               <h1>code</h1>
             </Link>
-            <Link to='/photos' className={isCurrentPage('/photos')} onClick={onMenuClick}>
+            <Link
+              to='/photos'
+              className={isCurrentPage('/photos')}
+              onClick={onMenuClick}
+            >
               <h1>photos</h1>
             </Link>
-            <Link to='/writing' className={isCurrentPage('/writing')} onClick={onMenuClick}>
+            <Link
+              to='/writing'
+              className={isCurrentPage('/writing')}
+              onClick={onMenuClick}
+            >
               <h1>writing</h1>
             </Link>
           </div>
-        </nav>
+        </nav> */}
         <div id={styles.socials}>
-          <a href='https://github.com/jhbforlife' target='_blank'>
+          <a
+            href='https://github.com/jhbforlife'
+            rel='noreferrer'
+            target='_blank'
+          >
             <AiFillGithub size={50} />
           </a>
-          <a href='https://instagram.com/jhbforlife' target='_blank'>
+          <a
+            href='https://instagram.com/jhbforlife'
+            rel='noreferrer'
+            target='_blank'
+          >
             <AiFillInstagram size={50} />
           </a>
-          <a href='https://linkedin.com/in/jacobhbrown99' target='_blank'>
+          <a
+            href='https://linkedin.com/in/jacobhbrown99'
+            rel='noreferrer'
+            target='_blank'
+          >
             <AiFillLinkedin size={50} />
           </a>
         </div>
