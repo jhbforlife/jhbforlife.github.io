@@ -19,23 +19,29 @@ const Home = () => {
         <li>
           i graduated from jcib in 2017 and earned my{' '}
           <a
-            href="https://www.ibo.org/programmes/diploma-programme/what-is-the-dp/"
-            target="_blank"
+            href='https://www.ibo.org/programmes/diploma-programme/what-is-the-dp/'
+            rel='noreferrer'
+            target='_blank'
           >
             ib diploma
           </a>
         </li>
         <li>i will *eventually* have a bs in psychology</li>
-        <li>i am an associate engineer at shipt</li>
         <li>
-          i have an amazing fiance named austin and a demon-spawned cat named
-          sam e
+          i am a Site Reliability Engineer (SRE) at{' '}
+          <a href='https://shipt.com' rel='noreferrer' target='_blank'>
+            shipt
+          </a>
+        </li>
+        <li>
+          me and my amazing husband austin have a demon-spawned cat named sam e
         </li>
         <li>
           i have a congenital eye disorder called{' '}
           <a
-            href="https://nystagmus.org/about/what-is-nystagmus/"
-            target="_blank"
+            href='https://nystagmus.org/about/what-is-nystagmus/'
+            rel='noreferrer'
+            target='_blank'
           >
             nystagmus
           </a>
@@ -46,7 +52,7 @@ const Home = () => {
 
   return (
     <div id={styles.home}>
-      <Card heading="about me" body={body} />
+      <Card heading='about me' body={body} />
       {/* <Card heading="code" />
       <Card heading="photos" />
       <Card heading="writing" /> */}

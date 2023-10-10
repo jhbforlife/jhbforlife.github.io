@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
@@ -13,5 +13,5 @@
 #home a:visited {
   color: black;
   text-decoration-color: black;
-  text-underline-offset: 4px;
+  text-underline-offset: 2px;
 }
