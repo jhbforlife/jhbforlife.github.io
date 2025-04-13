@@ -3,7 +3,7 @@ import { useLayoutEffect, useState } from 'react';
 
 // External components
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 // Internal non-components
 import styles from './Layout.module.css';
@@ -13,24 +13,24 @@ import Spacer from '../components/Spacer';
 
 const Layout = () => {
   // Get current route
-  const location = useLocation();
+  // const location = useLocation();
   // State to manage mobile UI
   const [isMobile, setIsMobile] = useState(false);
   // State to manage window resizing
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   // State management to show navigation menu on tap
-  const [menuState, setMenuState] = useState(false);
+  // const [menuState, setMenuState] = useState(false);
 
   // Checks if the current route is the current page
-  const isCurrentPage = (page) => {
-    return page === location.pathname ? styles.currentPage : '';
-  };
+  // const isCurrentPage = (page) => {
+  //   return page === location.pathname ? styles.currentPage : '';
+  // };
 
-  const onMenuClick = () => {
-    if (isMobile) {
-      setMenuState((prev) => !prev);
-    }
-  };
+  // const onMenuClick = () => {
+  //   if (isMobile) {
+  //     setMenuState((prev) => !prev);
+  //   }
+  // };
 
   window.addEventListener(
     'resize',
