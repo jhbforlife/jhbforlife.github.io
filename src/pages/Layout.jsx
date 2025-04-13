@@ -3,8 +3,7 @@ import { useLayoutEffect, useState } from 'react';
 
 // External components
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { HiMenu } from 'react-icons/hi';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 // Internal non-components
 import styles from './Layout.module.css';
