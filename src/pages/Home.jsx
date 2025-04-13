@@ -15,7 +15,7 @@ const Home = () => {
         as far as i go, here are some fun facts:
       </p>
       <ul>
-        <li>i am located in birmingham, al</li>
+        <li>i am located in boston, ma</li>
         <li>
           i graduated from jcib in 2017 and earned my{' '}
           <a
@@ -26,9 +26,8 @@ const Home = () => {
             ib diploma
           </a>
         </li>
-        <li>i will *eventually* have a bs in psychology</li>
         <li>
-          i am a Site Reliability Engineer (SRE) at{' '}
+          i am an Engineer at{' '}
           <a href='https://shipt.com' rel='noreferrer' target='_blank'>
             shipt
           </a>
